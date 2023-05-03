@@ -1,2 +1,14 @@
-package Annotations;public interface CustomAnnotation {
+package Annotations;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Target(ElementType.METHOD)
+// Execution in compilation time
+@Retention(RetentionPolicy.SOURCE)
+public @interface CustomAnnotation {
+    String value();
+    int version() default 1;
 }

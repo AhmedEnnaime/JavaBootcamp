@@ -1,6 +1,6 @@
 package Enums;
 
-public class Enums {
+public class Colors {
 
         enum Color{
             RED("red"), BLUE("blue"), GREEN("green");
